@@ -1,0 +1,65 @@
+{
+  "name": "@goapotik/ui",
+  "version": "1.0.0",
+  "private": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "dev": "next dev -p 4600",
+    "build": "tsup",
+    "start": "next start",
+    "formatter": "prettier --write \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
+    "check:lint": "next lint && eslint \"**/*.{ts,tsx}\"",
+    "check:prettier": "prettier --write \"**/*.{ts,tsx}\"",
+    "check:types": "tsc --pretty --noEmit",
+    "validate": "npm run check:prettier && npm run check:lint && npm run check:types"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.516.0",
+    "next": "15.3.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.3.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9.29.0",
+    "eslint-config-next": "^15.3.3",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^4",
+    "tsup": "^8.5.0",
+    "tw-animate-css": "^1.3.4",
+    "typescript": "^5"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "endOfLine": "auto",
+    "semi": false,
+    "importOrder": [
+      "^[./]"
+    ],
+    "importOrderSeparation": false,
+    "importOrderSortSpecifiers": true
+  }
+}

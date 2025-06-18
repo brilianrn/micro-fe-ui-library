@@ -1,0 +1,9 @@
+next-env.d.ts
+yarn.lock
+package-lock.json
+src/stories
+node_modules/
+dist/
+.next/
+prisma
+dist

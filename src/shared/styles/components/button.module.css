@@ -1,0 +1,51 @@
+@reference "../tailwind.css";
+
+.abutton {
+  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap font-bold tracking-wide transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive w-full cursor-pointer rounded-full;
+}
+
+/* Variants */
+.vdefault {
+  @apply bg-primary-default text-white shadow-xs hover:bg-primary-600;
+}
+
+.vdanger {
+  @apply bg-danger-default text-white shadow-xs hover:bg-danger-600 focus-visible:ring-danger-500/20 dark:focus-visible:ring-danger-950/40 dark:bg-danger-700;
+}
+
+.voutline {
+  @apply border bg-dark-50 shadow-xs hover:bg-info-50 hover:text-info-900 dark:bg-gray-800/30 dark:border-gray-900 dark:hover:bg-gray-800/50;
+}
+
+.vsecondary {
+  @apply bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/30;
+}
+
+.vghost {
+  @apply hover:bg-info-50 hover:text-info-900 dark:hover:bg-info-200/50;
+}
+
+.vlink {
+  @apply text-primary-default underline-offset-4 hover:underline;
+}
+
+/* Sizes */
+.szdefault {
+  @apply h-9 px-4 py-2 has-[>svg]:px-3 text-sm;
+}
+
+.szsm {
+  @apply h-9 gap-1.5 px-3 has-[>svg]:px-2.5 text-xs;
+}
+
+.szmedium {
+  @apply h-10 gap-1.5 px-3 has-[>svg]:px-3.5 text-sm;
+}
+
+.szlg {
+  @apply h-12 px-6 has-[>svg]:px-4 text-medium;
+}
+
+.szicon {
+  @apply size-9;
+}

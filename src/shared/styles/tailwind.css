@@ -1,0 +1,130 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-dark-lighter: #b0b0b0;
+  --color-dark-default: #3d3d3d;
+  --color-dark-darker: #000000;
+  --color-dark-50: #f6f6f6;
+  --color-dark-100: #e7e7e7;
+  --color-dark-200: #d1d1d1;
+  --color-dark-300: #b0b0b0;
+  --color-dark-400: #888888;
+  --color-dark-500: #6d6d6d;
+  --color-dark-600: #5d5d5d;
+  --color-dark-700: #4f4f4f;
+  --color-dark-800: #454545;
+  --color-dark-900: #3d3d3d;
+  --color-dark-950: #000000;
+
+  --color-primary-lighter: #00c2ff;
+  --color-primary-default: #0c82eb;
+  --color-primary-darker: #0f2a3a;
+  --color-primary-50: #f0f7ff;
+  --color-primary-100: #e0edfe;
+  --color-primary-200: #00c2ff;
+  --color-primary-300: #7cbefd;
+  --color-primary-400: #369efa;
+  --color-primary-500: #0c82eb;
+  --color-primary-600: #005cb9;
+  --color-primary-700: #014fa3;
+  --color-primary-800: #064486;
+  --color-primary-900: #0f2a3a;
+  --color-primary-950: #07244a;
+
+  --color-danger-lighter: #ffb0b0;
+  --color-danger-default: #ff5050;
+  --color-danger-darker: #ff0000;
+  --color-danger-50: #ffe6e6;
+  --color-danger-100: #ffd7d7;
+  --color-danger-200: #ffb0b0;
+  --color-danger-300: #ff8787;
+  --color-danger-400: #ff5a5a;
+  --color-danger-500: #ff5050;
+  --color-danger-600: #ff3d3d;
+  --color-danger-700: #ff2626;
+  --color-danger-800: #ff1a1a;
+  --color-danger-900: #ff0000;
+  --color-danger-950: #e60000;
+
+  --color-info-lighter: #b2e6ff;
+  --color-info-default: #66d9ef;
+  --color-info-darker: #2d8eb6;
+  --color-info-50: #e6f2ff;
+  --color-info-100: #cce9ff;
+  --color-info-200: #b2e6ff;
+  --color-info-300: #87ceeb;
+  --color-info-400: #66d9ef;
+  --color-info-500: #44a8d6;
+  --color-info-600: #2d8eb6;
+  --color-info-700: #1e6c95;
+  --color-info-800: #1b5e7e;
+  --color-info-900: #2d8eb6;
+  --color-info-950: #1a547a;
+
+  --color-success-lighter: #b9f6ca;
+  --color-success-default: #2e865f;
+  --color-success-darker: #0b4f3c;
+  --color-success-50: #e9f7e7;
+  --color-success-100: #cef2cf;
+  --color-success-200: #b9f6ca;
+  --color-success-300: #7bc96f;
+  --color-success-400: #2e865f;
+  --color-success-500: #0e6f44;
+  --color-success-600: #0b4f3c;
+  --color-success-700: #0a3e2e;
+  --color-success-800: #083926;
+  --color-success-900: #0b4f3c;
+  --color-success-950: #063022;
+
+  --color-warning-lighter: #ffe082;
+  --color-warning-default: #ffc107;
+  --color-warning-darker: #ff8c00;
+  --color-warning-50: #fff2cc;
+  --color-warning-100: #ffe6b3;
+  --color-warning-200: #ffe082;
+  --color-warning-300: #ffd45b;
+  --color-warning-400: #ffc107;
+  --color-warning-500: #ff9d00;
+  --color-warning-600: #ff8c00;
+  --color-warning-700: #ff7f00;
+  --color-warning-800: #ff6d00;
+  --color-warning-900: #ff8c00;
+  --color-warning-950: #ff5c00;
+
+  --color-gray-lighter: #f5f5f5;
+  --color-gray-default: #e5e5e5;
+  --color-gray-darker: #999999;
+  --color-gray-50: #fafafa;
+  --color-gray-100: #e6e6e6;
+  --color-gray-200: #d9d9d9;
+  --color-gray-300: #cdcdcd;
+  --color-gray-400: #bfbfbf;
+  --color-gray-500: #a6a6a6;
+  --color-gray-600: #6c6c6c;
+  --color-gray-700: #4d4d4d;
+  --color-gray-800: #333333;
+  --color-gray-900: #000000;
+  --color-gray-950: #1a1a1a;
+
+  --tracking-075: 0.75px;
+
+  --text-medium: 16px;
+
+  --font-regular: 'GeistMono Regular', sans-serif;
+  --font-black: 'GeistMono Black', sans-serif;
+  --font-bold: 'GeistMono Bold', sans-serif;
+  --font-extrabold: 'GeistMono ExtraBold', sans-serif;
+  --font-light: 'GeistMono Light', sans-serif;
+  --font-thin: 'GeistMono Thin', sans-serif;
+  --font-medium: 'GeistMono Medium', sans-serif;
+
+  --font-mplusrounded1c-regular: 'MPLUSRounded1c Regular', sans-serif;
+  --font-mplusrounded1c-black: 'MPLUSRounded1c Black', sans-serif;
+  --font-mplusrounded1c-bold: 'MPLUSRounded1c Bold', sans-serif;
+  --font-mplusrounded1c-extrabold: 'MPLUSRounded1c ExtraBold', sans-serif;
+  --font-mplusrounded1c-light: 'MPLUSRounded1c Light', sans-serif;
+  --font-mplusrounded1c-thin: 'MPLUSRounded1c Thin', sans-serif;
+  --font-mplusrounded1c-medium: 'MPLUSRounded1c Medium', sans-serif;
+}
