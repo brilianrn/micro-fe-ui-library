@@ -1,5 +1,5 @@
 {
-  "name": "@goapotik/ui",
+  "name": "@brilianrn/micro-fe-ui-library",
   "version": "1.0.0",
   "private": false,
   "main": "./dist/index.js",
@@ -8,6 +8,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "prepare": "husky install",
     "dev": "next dev -p 4600",
