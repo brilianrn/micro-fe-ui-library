@@ -1,5 +1,5 @@
 {
-  "name": "@brilianrn/micro-fe-ui-library",
+  "name": "@goapotik/ui",
   "version": "1.0.0",
   "private": false,
   "main": "./dist/index.js",
